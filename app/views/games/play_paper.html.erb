@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="/assets/css/bootstrap.css">
+<link rel="stylesheet" href="/assets/additional_styles.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-2 play_paper">
+          <a href="/paper" class="white">Go play paper!</a>
+        </div>
+        <div class="col-sm-offset-2 col-sm-2 play_rock">
+          <a href="/rock" class="white">Go play rock!</a>
+        </div>
+        <div class="col-sm-offset-2 col-sm-2 play_scissors">
+          <a href="/scissors" class="white">Go play scissors!</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+          <h1 class="text-center entry">You played paper!</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-5 col-sm-2">
+          <i class="fa fa-hand-paper-o fa-5x align_icon" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+          <h1 class="text-center entry">
+            The computer played
+            <%= computer_move = ["rock", "paper", "scissors"].sample %>!
+          </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-5 col-sm-2">
+          <% if computer_move == "paper"  %>
+            <i class="fa fa-hand-paper-o fa-5x align_icon" aria-hidden="true"></i>
+
+          <% elsif computer_move == "scissors" %>
+            <i class="fa fa-hand-scissors-o fa-5x align_icon" aria-hidden="true"></i>
+
+          <% else %>
+            <i class="fa fa-hand-rock-o fa-5x align_icon" aria-hidden="true"></i>
+          <% end %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+          <h1 class="text-center result">
+            <% if computer_move == "paper"  %>
+              You tied!
+            <% elsif computer_move == "scissors" %>
+              You lose!
+            <% else %>
+              You win!
+            <% end %>
+          </h1>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+h1.entry {
+  background-color: #5cb85c;
+  color: #f9f9f9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1.result {
+  background-color: #d9534f;
+  color: #f9f9f9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1.welcome {
+  background-color: #5cb85c;
+  color: #f9f9f9;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+align_icon {
+  text-align: center;
+}
+
+a.white {
+  color: #f9f9f9;
+}
+
+div.play_rock {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #5bc0de;
+  text-align: center;
+}
+
+div.play_paper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #428bca;
+  text-align: center;
+}
+
+div.play_scissors {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #428bca;
+  text-align: center;
+}
